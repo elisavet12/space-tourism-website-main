@@ -4,7 +4,7 @@
 
 :root {
   /* colors */
-  --clr-dark: hsl(230 35% 7%);
+  --clr-dark: 230 35% 7%;
   --clr-light: hsl(231 77% 90%);
   --clr-white: hsl(0 0% 100%);
 
@@ -65,7 +65,7 @@ body {
   font-family: var(--ff-sans-normal);
   font-size: var(--fs-400);
   color: var(--clr-white);
-  background-color: var(--clr-dark);
+  background-color: hsl(var(--clr-dark));
   line-height: 1.5;
   min-height: 100vh;
 }
@@ -213,4 +213,14 @@ select {
 .fs-700,
 .fs-600 {
   line-height: 1.1;
+}
+
+h2 {
+  font-family: var(--ff-sans-cond);
+}
+
+.text-accent {
+  font-family: var(--ff-sans-normal);
+  text-transform: uppercase;
+  font-size: var(--fs-400);
 }
